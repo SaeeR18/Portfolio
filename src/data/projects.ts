@@ -1,7 +1,6 @@
 import heatshield from "@/assets/project-heatshield.jpg";
 import heatshieldFrames from "@/assets/heatshield-app-screens.png";
 import fashionshow from "@/assets/project-fashionshow.jpg";
-import fashionPoster from "@/assets/fashion-poster.png.asset.json";
 import fashionEventPoster from "@/assets/fashion-show-event-poster.png";
 import fashionInstagramStory from "@/assets/fashion-show-instagram-story.png";
 import club from "@/assets/project-club.jpg";
@@ -11,7 +10,10 @@ import campaign from "@/assets/project-campaign.jpg";
 import campaignShot1 from "@/assets/IMG_7452.png.asset.json";
 import campaignShot2 from "@/assets/IMG_7446.png.asset.json";
 import campaignShot3 from "@/assets/IMG_7447.png.asset.json";
-
+import eliteCampaign1 from "@/assets/elite-campaign-1.png";
+import eliteCampaign2 from "@/assets/elite-campaign-2.png";
+import forgeFlame from "@/assets/forge-flame-campaign.png";
+import atelierOmnia from "@/assets/atelier-omnia-campaign.png";
 export type Project = {
   slug: string;
   index: string;
@@ -112,10 +114,10 @@ export const projects: Project[] = [
     ],
     tools: ["Canva", "Figma", "Adobe Photoshop"],
     image: fashionshow,
-    caseStudyImage: fashionPoster.url,
-    caseStudyImageTitle: "Campaign poster",
-    caseStudyImageDescription:
-      "The central event poster for the fashion show — minimal black-and-white typography with a strong editorial layout.",
+    // caseStudyImage: fashionEventPoster,
+    // caseStudyImageTitle: "Campaign poster",
+    // caseStudyImageDescription:
+    //   "The central event poster for the fashion show — minimal black-and-white typography with a strong editorial layout.",
     tint: "bg-blush",
     span: "tall",
     gallery: [
@@ -231,9 +233,10 @@ export const projects: Project[] = [
     tint: "bg-butter",
     span: "tall",
     gallery: [
-      { url: campaignShot1.url, alt: "Atelier Omnia campaign poster — tailored suit editorial" },
-      { url: campaignShot2.url, alt: "Elite campaign poster — the art of tailoring" },
-      { url: campaignShot3.url, alt: "Elite magazine cover — the art of sartorial motion" },
+      { url: atelierOmnia, alt: "Atelier Omnia campaign poster — tailored suit editorial" },
+      { url: eliteCampaign1, alt: "Elite campaign poster — the art of tailoring" },
+      { url: eliteCampaign2, alt: "Elite magazine cover — the art of sartorial motion" },
+      { url: forgeFlame, alt: "Forge & Flame heritage denim collection — the denim jumpsuit redefined" },
     ],
     note: "Fashion × Branding × Photography × Graphic Design.",
     caseStudy: [
